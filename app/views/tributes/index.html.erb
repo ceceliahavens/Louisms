@@ -1,0 +1,17 @@
+<div class="col-xs-11 col-xs-offset-3 about">
+<h1>Louisms</h1>
+<h2>A Collection of Quotes and Tributes</h2>
+<div class="col-xs-12">
+		<%= image_tag 'lou4.jpg', :class => 'img-responsive' %>
+  		</div>
+  	<br />
+  	<br />
+
+ <% @tributes.each do |tribute| %>
+  <div>
+    <h2><%= tribute.saying %></h2><br />
+    <i><%= tribute.contributor %></i><br />
+    </div>
+
+  <hr />
+<% end %>

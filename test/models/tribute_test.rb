@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class QuotesControllerTest < ActionController::TestCase
+class TributeTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
