@@ -34,12 +34,9 @@
 links {
     padding-top:26px
 }
-.links a {
-    color:white;
-    font-size: 25px;
-    border-bottom: 1px solid #F78716;
-    font-family: 'patua_oneregular', sans-serif;
-    font-weight:bold;
+
+a {
+    font-family: 'patua_oneregular', serif;
 }
 
 header {
@@ -78,10 +75,16 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   background: url('/assets/burried.png');
+  font-family: 'patua_oneregular', serif;
 }
 
 .navbar.navbar-inverse {
   background:url('/assets/soft_kill.png');
   border-radius: 0;
   box-shadow: 0px 6px 3px #2a2a2a;
+}
+
+.circle {
+  font-family: 'patua_oneregular', serif;
+  color:black;
 }
