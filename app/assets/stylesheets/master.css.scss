@@ -29,16 +29,18 @@
     color: #0E4718;
     padding_top: 26px;
 }
-.links {
+
+links {
     padding-top:26px
 }
 .links a {
-    color:black;
+    color:white;
     font-size: 25px;
     border-bottom: 1px solid #F78716;
-    font-family: 'lobster_twoitalic', sans-serif;
+    font-family: 'patua_oneregular', sans-serif;
     font-weight:bold;
 }
+
 header {
     border-top: 15px solid #F78716;
 }
@@ -47,14 +49,14 @@ hr {
 }
 
 h1 {
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
-  font-weight: 600;
-  letter-spacing: -1.5px;
+  font-family: 'patua_oneregular', serif;
+  font-weight:bold;
+  font-size:48px;
 }
 h2 {
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
-  font-weight: 600;
-  letter-spacing: -1.5px;
+  font-family: 'patua_oneregular', serif;
+  font-weight:bold;
+  font-size:30px;
 }
 .booyah-box {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
