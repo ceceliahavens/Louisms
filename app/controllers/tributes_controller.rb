@@ -1,6 +1,6 @@
 class TributesController < ApplicationController
 	def index
-		@tributes = Tribute.all(:saying).page(params[:page]).per(10)
+		@tributes = Tribute.all.page(params[:page]).per(10)
 	end
 
 	def new
