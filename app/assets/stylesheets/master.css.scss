@@ -90,6 +90,10 @@ body {
   color:black;
 }
 
+.logo:hover {
+  text-decoration:none;
+}
+
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
   height: 500px;
   width: 100%;
@@ -105,11 +109,11 @@ body {
   text-decoration: none;
   background-color: white;
   border: 1px solid #DDD;
-  border-left-width: 0;
+ 
 }
 
 .pagination {
-  border-left: 1px solid #ddd;
+  
   .first{
     padding : 0;
     float: none;

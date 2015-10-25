@@ -35,6 +35,7 @@
 </nav>
 	<header>
 		<div class="col-xs-2">
+  <%= link_to root_path, :class => 'logo' do %>
 		<div class="circle">
         <br />
         Think
@@ -43,6 +44,7 @@
         <br />
         It!
       </div>
+    <% end %>
     </div>
     <br />
     <br />
@@ -63,7 +65,7 @@
 
   <div class="footer">
     <div class="container">
-      <p class="text-muted">A hat is just a rock and roll toupee.</p>
+      <%= link_to "A hat is just a rock and roll toupee", root_path %>
     </div>
   </div>
 
