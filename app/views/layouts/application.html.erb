@@ -6,7 +6,7 @@
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+
   <nav class="navbar navbar-inverse" role="navigation">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -26,13 +26,17 @@
       <ul class="nav navbar-nav">
           <li>
           <%= link_to 'Contribute',  new_tribute_path %>
-               </ul>
+          <%= link_to 'About', about_path %>
+           </ul>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
+        <%= link_to 'About', about_path %>
       </ul>
+      </div>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+<body>
 	<header>
 		<div class="col-xs-2">
   <%= link_to root_path, :class => 'logo' do %>
@@ -73,5 +77,6 @@
       <%= link_to "A hat is just a rock and roll toupee", root_path %>
     </div>
   </div>
+</body>
 
   

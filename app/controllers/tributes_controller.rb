@@ -14,6 +14,9 @@ class TributesController < ApplicationController
 		end
 		redirect_to root_path
 	end
+	def about
+	end
+	
 
 	private
 	def tribute_params
