@@ -1,4 +1,6 @@
 class TributesController < ApplicationController
+	before_action :authenticate_user!, :only => [:new, :create]
+	
 	def index
 		@tributes = Tribute.all.page(params[:page]).per(10)
 	end
@@ -12,6 +14,7 @@ class TributesController < ApplicationController
 		if @tribute.invalid?
 			flash[:error] = '<strong> Could not save</strong> the data you entered is invalid'
 		end
+		current_user.tributes.create(tribute_params)
 		redirect_to root_path
 	end
 	def about
