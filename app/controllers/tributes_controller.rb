@@ -10,10 +10,6 @@ class TributesController < ApplicationController
 	end
 
 	def create
-		@tribute = Tribute.create(tribute_params)
-		if @tribute.invalid?
-			flash[:error] = '<strong> Could not save</strong> the data you entered is invalid'
-		end
 		current_user.tributes.create(tribute_params)
 		redirect_to root_path
 	end
