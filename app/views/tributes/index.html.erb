@@ -66,7 +66,7 @@
 
  <% @tributes.each do |tribute| %>
   <div class="booyah-box col-xs-10 col-xs-offset-1">
-     <h2><%= tribute.saying %></h2>
+     <h2><%= link_to tribute.saying, tribute_path(tribute) %></h2><br />
     <i><%= tribute.contributor %></i><br /><br />
 
     </div>

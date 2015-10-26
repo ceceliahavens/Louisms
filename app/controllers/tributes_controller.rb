@@ -13,7 +13,12 @@ class TributesController < ApplicationController
 		current_user.tributes.create(tribute_params)
 		redirect_to root_path
 	end
+
 	def about
+	end
+
+	def show
+		@tribute = Tribute.find(params[:id])
 	end
 	
 
