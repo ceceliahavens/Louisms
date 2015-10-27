@@ -16,6 +16,9 @@ class TributesController < ApplicationController
 
 	def about
 	end
+	
+	def remembrance
+	end
 
 	def show
 		@tribute = Tribute.find(params[:id])

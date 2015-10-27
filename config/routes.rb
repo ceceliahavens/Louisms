@@ -4,6 +4,7 @@ Quiz1::Application.routes.draw do
 
   resources :tributes
    get 'about', :to => 'tributes#about'
+   get 'remembrance', :to => 'tributes#remembrance'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
