@@ -1,4 +1,7 @@
 <div class="booyah-box col-xs-10 col-xs-offset-1">
 <h1><%= @tribute.saying %></h1>
 <i><%= @tribute.contributor %></i>
+<div class="pull-right">
+	<%= link_to 'Edit', edit_tribute_path(@tribute), :class => 'btn btn-primary' %>
+</div>
 </div>

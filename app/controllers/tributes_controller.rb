@@ -20,6 +20,18 @@ class TributesController < ApplicationController
 	def show
 		@tribute = Tribute.find(params[:id])
 	end
+
+	def edit
+		@tribute = Tribute.find(params[:id])
+	end
+
+	def update
+		  @tribute = Tribute.find(params[:id])
+		  @tribute.update_attributes(tribute_params)
+		  redirect_to root_path
+	end
+
+
 	
 
 	private
