@@ -31,6 +31,12 @@ class TributesController < ApplicationController
 		  redirect_to root_path
 	end
 
+	def destroy
+		@tribute = Tribute.find(params[:id])
+		@tribute.destroy
+		redirect_to root_path
+	end
+
 
 	
 
