@@ -6,7 +6,7 @@ class TributesController < ApplicationController
 	end
 
 	def new
-		@tributes = Tribute.new
+		@tribute = Tribute.new
 	end
 
 	def create
